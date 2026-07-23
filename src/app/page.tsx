@@ -13,21 +13,21 @@ import { Input } from "@/components/ui/input";
 const steps = [
   {
     number: "01",
-    title: "Conecta tu API de IA",
+    title: "Escribe lo que quieres lograr",
     description:
-      "Usa tu propia API key (OpenAI, Anthropic, o la que prefieras) para generar código con tu cuenta y tus límites.",
+      '"Quiero sumar las ventas de marzo por vendedor" o "necesito unir estas dos tablas por ID de cliente" — en español simple, sin tecnicismos.',
   },
   {
     number: "02",
-    title: "Escribe lo que quieres lograr",
+    title: "La IA lo resuelve por ti",
     description:
-      '"Quiero sumar las ventas de marzo por vendedor" o "necesito unir estas dos tablas por ID de cliente" — en español simple.',
+      "SencilloBot entiende tu pedido y arma la fórmula o la consulta exacta. No necesitas saber nada de Excel avanzado ni de SQL.",
   },
   {
     number: "03",
     title: "Copia el código y listo",
     description:
-      "Recibe la fórmula de Excel o la consulta SQL exacta, lista para pegar donde la necesites.",
+      "Recibe el resultado listo para pegar en tu planilla o tu base de datos, con una explicación breve de qué hace.",
   },
 ];
 
@@ -38,9 +38,9 @@ const features = [
       "Genera fórmulas complejas de Excel o consultas SQL completas sin memorizar sintaxis.",
   },
   {
-    title: "Tu propia API key",
+    title: "Listo para usar, sin configurar nada",
     description:
-      "Conectas la IA que ya usas. Sin intermediarios, sin límites artificiales de mensajes.",
+      "La IA ya está integrada en tu cuenta. No necesitas API keys ni conocimientos técnicos para empezar.",
   },
   {
     title: "Explicación incluida",
@@ -78,9 +78,9 @@ export default function Home() {
             Recibe el código listo.
           </h1>
           <p className="max-w-2xl text-balance text-lg text-muted-foreground">
-            SencilloBot conecta tu propia API de IA para convertir una simple
-            descripción en la fórmula de Excel o la consulta SQL exacta que
-            necesitas. Sin aprender sintaxis, sin buscar en foros.
+            SencilloBot convierte una simple descripción en la fórmula de
+            Excel o la consulta SQL exacta que necesitas. Sin aprender
+            sintaxis, sin buscar en foros, sin configurar nada.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button size="lg" render={<Link href="/signup" />}>
@@ -152,7 +152,8 @@ export default function Home() {
               Prueba SencilloBot gratis
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Crea tu cuenta y conecta tu API en menos de dos minutos.
+              Crea tu cuenta y empieza a generar fórmulas y consultas en
+              menos de dos minutos.
             </p>
             <Card className="mt-8 text-left">
               <CardContent>
